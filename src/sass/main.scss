@@ -1,0 +1,29 @@
+// Utils styles
+@import './utils/variables';
+@import './utils/mixins';
+
+// Base styles
+@import './base/base';
+@import './base/reset';
+
+// Components styles
+@import './components/container';
+
+// Header
+@import './components/header';
+@import './components/mobile-menu';
+
+@import './components/hero';
+@import './components/about-us';
+@import './components/apartments';
+@import './components/infrastructure';
+@import './components/gallery';
+@import './components/contacts';
+
+// Footer
+@import './components/footer';
+
+// Modal window
+@import './components/modal-window';
+
+@import './components/download-catalog';

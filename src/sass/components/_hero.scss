@@ -1,0 +1,115 @@
+.hero {
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+  }
+}
+.hero-box {
+  background-color: #2e2b23;
+  text-align: center;
+  padding-bottom: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+
+  // Mobile screen
+  background-image: url(../img/hero/img_sm@1x.jpg);
+  // retina mobile screen
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../img/hero/img_sm@2x.jpg);
+  }
+
+  // Tablet screen
+  @media screen and (min-width: 768px) {
+    background-position: center;
+    background-image: url(../img/hero/img_md@1x.jpg);
+
+    // retina tablet screen
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/hero/img_md@2x.jpg);
+    }
+    padding-bottom: 100px;
+  }
+
+  // Desktop screen
+  @media screen and (min-width: 1280px) {
+    background-image: url(../img/hero/img_lg@1x.jpg);
+    // retina tablet screen
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/hero/img_lg@2x.jpg);
+    }
+  }
+}
+
+.hero__title {
+  padding-top: 32px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: calc(72 / 48);
+
+  color: #7e6d53;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 7px;
+    font-size: 72px;
+    line-height: calc(108 / 72);
+  }
+}
+.hero__text {
+  margin-bottom: 246px;
+  max-width: 193px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  text-align: center;
+
+  color: #7e6d53;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 383px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: calc(36 / 24);
+    max-width: 484px;
+  }
+}
+
+.hero__btn {
+  height: 50px;
+  width: 200px;
+  background: var(--white_hot);
+  border-radius: 16px;
+
+  border: none;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: calc(30 / 20);
+  color: var(--brown_black);
+
+  transition: color var(--turns-fast);
+  transition: background-color var(--turns-fast);
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: calc(36 / 24);
+    height: 54px;
+    width: 256px;
+    padding: 9px 62px;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--white_hot);
+    background: var(--brown);
+  }
+}

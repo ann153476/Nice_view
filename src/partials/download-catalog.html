@@ -1,0 +1,34 @@
+
+<div class="backdrop is-hidden" data-download-modal>
+    <div class="download">
+        <button class="download__close-btn" type="button" data-download-modal-close>
+            <svg class="download__icon-close" width="24" height="24">
+                <use href="./img/svg-sprite/icons.svg#gg_close"></use>
+            </svg>
+        </button>
+        <div class="download__box">
+            <picture>
+                <source media="(min-width: 320px)" srcset="
+         ./img/download-modal/waiting-person_all@1x.png 1x,
+         ./img/download-modal/waiting-person_all@1x.png 2x">
+                <img class="download__img" src="./img/download-modal/waiting-person_all@1x.png" alt="waiting person"
+                    width="112" height="134">
+            </picture>
+            <div class="download__container">
+                <h2 class="download__title">Download the catalog</h2>
+                <p class="download__text"> We will send you more photos, videos and information by mail</p>
+                <div class="download__input-container">
+                    <form>
+                        <input class="download__input" type="email" name="email" placeholder="EMAIL ADRESS" required
+                            minlength="5" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+                        <button class="download__send-btn" type="submit">
+                            <svg class="download__send-icon" width="24" height="24">
+                                <use href="./img/svg-sprite/icons.svg#send"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

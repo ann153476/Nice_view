@@ -1,0 +1,59 @@
+<!-- modal window -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal__btn" type="button" data-modal-close>
+      <svg class="modal__close" width="32" height="32">
+        <use href="./img/svg-sprite/icons.svg#icon-close-btn"></use>
+      </svg>
+    </button>
+
+    <form class="booking" name="booking_form">
+      <span class="form__title"
+        >Leave your contacts and we will contact you</span
+      >
+
+      <ul class="form__input-list">
+        <li class="form__input-item">
+          <label class="form__label">
+            <span class="form__name">Name</span>
+            <input
+              class="form__input"
+              type="text"
+              id="user_name"
+              placeholder="Yuliia"
+              style="font-size: 14px"
+              pattern="[A-Za-z]{0,}"
+            />
+          </label>
+        </li>
+        <li class="form__input-item">
+          <label class="form__label">
+            <span class="form__name">Telephone</span>
+            <input
+              class="form__input"
+              type="tel"
+              id="user_name"
+              placeholder="+380"
+              style="font-size: 14px"
+              pattern="[+0-9]{0,}"
+            />
+          </label>
+        </li>
+        <li class="form__input-item">
+          <label class="form__label">
+            <span class="form__name">Email</span>
+            <input
+              class="form__input"
+              type="email"
+              id="user_name"
+              placeholder="Contact@gmail.com"
+              style="font-size: 14px"
+            />
+          </label>
+        </li>
+      </ul>
+
+      <button type="submit" class="form__btn">Contact us</button>
+    </form>
+  </div>
+</div>
